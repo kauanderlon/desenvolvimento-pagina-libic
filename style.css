@@ -16,7 +16,7 @@ body {
 
 #nomeCompletoLiga {
     font-size: 3rem;
-    background-color: #702d8c;
+    background-color: #702D8B;
     height: 80px;
     width: 800px;
     color: #eee8ee;
@@ -30,7 +30,8 @@ body {
 
 #nomeCompletoLiga p {
     margin: 0;
-    font-weight: bold;
+    font-weight: bolder;
+    gap: 3px;
 }
 
 #identificacaoInicial {
@@ -38,21 +39,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 3rem;
     margin-bottom: 50px;
     margin-top: 22vh;
 }
 
 #sigla h1 {
-    font-size: 9rem; 
-    color: #722d88; 
+    font-size: 12rem; 
+    color: #6F2D8D; 
     margin: 0; 
     display: flex; 
     align-items: center; 
+    
 }
 
 #tuboDeEnsaioSigla {
-    width: 3rem;
+    width: 4rem;
 }
 
 #logoContainer img {
@@ -61,12 +63,12 @@ body {
 }
 
 #btnSaibaMais button {
-    width: 250px;
+    width: 270px;
     height: 70px;
-    background: linear-gradient(to right, #702e88, #9142b0);
+    background: linear-gradient(to right, #6c2c85, #8F44B0);
     border: none;
     border-radius: 8px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #ffffff;
     font-weight: bold;
     margin-top: 6vh;
@@ -75,7 +77,7 @@ body {
 }
 
 #btnSaibaMais button:hover {
-    background: linear-gradient(to right, #4d1e5e, #6b2d83);
+    background: linear-gradient(to right, #5b2570, #7d3b99);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.637);
     cursor: pointer;
 }
