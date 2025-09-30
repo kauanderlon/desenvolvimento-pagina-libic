@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: radial-gradient(circle at center, white 80%, #dbd9d9);
+    
+}
+
+#conteudo {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+#nomeCompletoLiga {
+    font-size: 3rem;
+    background-color: #702d8c;
+    height: 80px;
+    width: 800px;
+    color: #eee8ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#nomeCompletoLiga p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#identificacaoInicial {
+    margin-right: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 50px;
+    margin-top: 22vh;
+}
+
+#sigla h1 {
+    font-size: 9rem; 
+    color: #722d88; 
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+}
+
+#tuboDeEnsaioSigla {
+    width: 3rem;
+}
+
+#logoContainer img {
+    width: 220px;
+    height: 220px;
+}
+
+#btnSaibaMais button {
+    width: 250px;
+    height: 70px;
+    background: linear-gradient(to right, #702e88, #9142b0);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 6vh;
+    box-shadow: 2px 2px 3px #000000a6;
+
+}
+
+#btnSaibaMais button:hover {
+    background: linear-gradient(to right, #4d1e5e, #6b2d83);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.637);
+    cursor: pointer;
+}
