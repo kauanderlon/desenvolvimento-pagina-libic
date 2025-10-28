@@ -6,7 +6,7 @@ body {
 }
 
 #conteudo {
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -14,7 +14,7 @@ body {
 }
 
 #nomeCompletoLiga {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #702D8B;
     height: 80px;
     width: 800px;
@@ -44,7 +44,7 @@ body {
 }
 
 #sigla h1 {
-    font-size: 12rem; 
+    font-size: 10rem; 
     color: #6F2D8D; 
     margin: 0; 
     display: flex; 
@@ -53,21 +53,21 @@ body {
 }
 
 #tuboDeEnsaioSigla {
-    width: 4rem;
+    width: 3rem;
 }
 
 #logoContainer img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
 }
 
 #btnSaibaMais button {
     width: 270px;
-    height: 70px;
+    height: 60px;
     background: linear-gradient(to right, #6c2c85, #8F44B0);
     border: none;
     border-radius: 8px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #ffffff;
     font-weight: bold;
     margin-top: 6vh;
@@ -176,4 +176,225 @@ body {
 .molecula { 
   top: 10%; left: 40%; 
   animation: float3 14s ease-in-out infinite;
+}
+
+/*AJUSTANDO RESPONSIVIDADE*/
+
+@media (min-width: 2560px){
+  #nomeCompletoLiga {
+    font-size: 4rem;
+    height: 120px;
+    width: 1250px;
+}
+
+#sigla h1 {
+    font-size: 18rem; 
+}
+
+#tuboDeEnsaioSigla {
+    width: 6rem;
+}
+
+#logoContainer img {
+    width: 350px;
+    height: 350px;
+}
+
+#btnSaibaMais button {
+    width: 450px;
+    height: 90px;
+    font-size: 3.2rem;
+}
+
+}
+
+@media (max-width: 800px){
+  #nomeCompletoLiga {
+    font-size: 2.2rem;
+    height: 60px;
+    width: 650px;
+}
+
+#sigla h1 {
+    font-size: 8rem; 
+}
+
+#tuboDeEnsaioSigla {
+    width: 2.6rem;
+}
+
+#logoContainer img {
+    width: 150px;
+    height: 150px;
+}
+
+#btnSaibaMais button {
+    width: 250px;
+    height: 50px;
+    font-size: 1.8rem;
+}
+
+}
+
+@media (max-width: 600px) {
+    
+
+
+    #nomeCompletoLiga {      
+        font-size: 1.4rem;  
+        height: 20px;
+        width: 350px;       
+        padding: 15px 5px;  
+    }
+
+    #nomeCompletoLiga p {
+      
+        text-align: center;
+    }
+
+    #identificacaoInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 50px;
+    margin-top: 25vh;
+}
+    
+    #sigla h1 {
+        font-size: 6.5rem;  
+    }
+
+    #tuboDeEnsaioSigla {
+        width: 2rem;      
+    }
+
+    #logoContainer img {
+        width: 120px;      
+        height: 120px;
+    }
+
+    #btnSaibaMais button {
+        width: 220px;         
+        max-width: 270px;   
+        font-size: 1.6rem;
+        margin-top: 2vh;
+    }
+
+    .icone {
+        width: 15%;     
+        opacity: 0.1; 
+    }
+}
+
+@media (max-width: 400px) {
+    
+
+    #nomeCompletoLiga {      
+        font-size: 1.4rem;  
+        height: 20px;
+        width: 350px;       
+        padding: 15px 5px;  
+    }
+
+    #nomeCompletoLiga p {
+
+        text-align: center;
+    }
+
+
+    #conteudo{
+      margin: auto;
+    }
+
+    #identificacaoInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 22vh;
+}
+    
+    #sigla h1 {
+        font-size: 6rem;  
+    }
+
+    #tuboDeEnsaioSigla {
+        width: 1.8rem;      
+    }
+
+    #logoContainer img {
+        width: 100px;      
+        height: 100px;
+    }
+
+    #btnSaibaMais button {
+        width: 200px;         
+        max-width: 270px;   
+        font-size: 1.4rem;
+        margin-top: 4vh;
+    }
+
+    .icone {
+        width: 17%;     
+        opacity: 0.1; 
+    }
+}
+
+@media (max-width: 350px) {
+    
+
+    #nomeCompletoLiga {    
+         margin: auto;  
+        font-size: 1.2rem;  
+        height: 20px;
+        width: 90%;       
+        padding: 15px 5px;  
+    }
+
+    #nomeCompletoLiga p {
+        text-align: center;
+    }
+
+
+    #conteudo{
+      margin: auto;
+    }
+
+    #identificacaoInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 22vh;
+}
+    
+    #sigla h1 {
+        font-size: 5.4rem;  
+    }
+
+    #tuboDeEnsaioSigla {
+        width: 1.7rem;      
+    }
+
+    #logoContainer img {
+        width: 100px;      
+        height: 100px;
+    }
+
+    #btnSaibaMais button {
+        width: 180px;         
+        max-width: 240px;   
+        font-size: 1.3rem;
+        margin-top: 6vh;
+    }
+
+    .icone {
+        width: 20%;     
+        opacity: 0.1; 
+    }
 }
