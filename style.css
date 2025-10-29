@@ -1,4 +1,4 @@
-body {
+#body-inicial {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     background-image: radial-gradient(circle at center, white 60%, #a6a2a7da);
@@ -396,5 +396,213 @@ body {
     .icone {
         width: 20%;     
         opacity: 0.1; 
+    }
+}
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#body-principal {
+    background-color: #621981; /*roxo escuro*/
+    margin: 0;
+    font-family: 'Montserrat', 'Lucida Sans', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    background-color: #FFFFFF;
+    height: 10vh; 
+    border-radius: 0 0 15px 15px;
+    font-size: 1.1rem;
+    color: #621981; /* cor do fundo */
+    width: 100%;    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+#titulo-header  {
+    margin: 0;
+    font-size: 1.6rem; 
+    font-weight: bolder;
+    z-index: 9999;
+}
+
+
+
+header nav {
+    z-index: 9999;
+}
+
+header nav ul {
+    display: flex;      
+    gap: 20px;           
+    list-style: none;    
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #621981;         /* mesma cor do fundo e do titulo */
+    text-decoration: none;   /* sem sublinhado */
+    font-size: 1rem;
+    font-weight: 700;       
+    padding-bottom: 5px;    
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #3d0e52; /* roxo um pouco mais escuro */
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #621981;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1); 
+}
+
+.header-icones-fundo {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    pointer-events: none; 
+    z-index: 1; 
+}
+
+.icone-header {
+    position: absolute;
+    opacity: 0.14;      
+    width: 50px;        
+    height: auto;       
+}
+
+.becker-header {
+    top: 5%; /* posiciona de cima */
+    transform: rotate(-10deg); /*gira*/
+}
+
+.microscopio-header {
+    top: 15%;
+    left: 28%; /* posiciona da esquerda */
+    transform: rotate(-15deg);
+}
+
+.dna-header {
+    top: 30%;
+    left: 45%;
+    transform: rotate(30deg);
+}
+
+.molecula-header {
+    top: 25%;
+    right: 12%; /* posiciona da direita */
+    transform: rotate(10deg);
+}
+
+.tubos-header {
+    bottom: 10%; /* posiciona de baixo */
+    right: 40%;
+    transform: rotate(-5deg);
+}
+
+/*ajustando responsividade*/
+
+
+@media (max-width: 350px) {
+    
+    header{
+        padding: 0;
+    }
+    header h1 {
+        font-size: 1.4rem; 
+        text-align: center; 
+        padding: 0;
+    }
+
+    header nav ul {  
+        display: none;   /*tira a barra de navegação pra n ficar poluído*/   
+    }
+    
+    .header-icones-fundo {
+        display: none; /*tira os icones pra n ficar poluído*/
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;           
+        padding: 15px 10px;     
+        gap: 10px;              
+    }
+
+    header h1 {
+        font-size: 1.3rem; 
+        text-align: center; 
+    }
+
+    header nav ul {      
+        justify-content: center; 
+        gap: 10px;          
+    }
+
+    header nav a {
+        font-size: 0.8rem; 
+    }
+
+    
+    .header-icones-fundo {
+        display: none; /*tira os icones pra n ficar poluído*/
+    }
+}
+
+
+@media (max-width: 768px) {
+     header h1 {
+        font-size: 1.1rem; 
+    }
+    
+    header nav a {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    header h1 {
+        font-size: 3rem; 
+    }
+    
+    header nav a {
+        font-size: 1.8rem;
+    }
+    
+
+    .icone-header {
+        width: 90px;
+        opacity: 0.15;
     }
 }
