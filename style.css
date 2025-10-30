@@ -641,7 +641,60 @@ footer {
     z-index: 9999;
 }
 
-footer img {
+#imagem-titulo-footer {
     height: 3.5rem;
 }
 
+.footer-icones-fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    pointer-events: none; 
+    z-index: 1;
+}
+
+.icone-footer {
+    position: absolute;
+    opacity: 0.2;      
+    width: 60px;        
+    height: auto;       
+}
+
+.dna-footer {
+    bottom: 20%;
+    right: 32%;
+    transform: rotate(-20deg);
+}
+
+.molecula-footer {
+    bottom: 30%;
+    right: 10%;
+    transform: rotate(15deg);
+}
+
+.tubos-footer {
+    bottom: 10%;
+    left: 15%;
+    transform: rotate(5deg);
+}
+
+.becker-footer{
+    top: 10%;
+    right: 25%;
+    transform: rotate(10deg);
+}
+
+.amostra-footer{
+    top: 10%;
+    left: 10%;
+    transform: rotate(-20deg);
+}
+
+.prancheta-footer{
+    top: 20%;
+    left: 30%;
+    transform: rotate(10deg);
+}
