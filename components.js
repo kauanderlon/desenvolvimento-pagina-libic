@@ -52,6 +52,7 @@ function criarSobreLigaComponent() {
     container.className = 'container1';
 
     container.innerHTML = `
+    <div class="espacamento-header" id="sobre"></div>
         <h1 class="titulos">Sobre a Liga</h1>
         <div class="secao1-2" id="sobre-a-liga">
             <h1>
@@ -68,6 +69,7 @@ function criarSobreLigaComponent() {
             <img src="./elementosLIBIC/equipe-libic.png" class="imagens">
         </div>
 
+    <div class="espacamento-header" id="nosso-orientador"></div>
         <h1 class="titulos">Nosso Orientador</h1>
         <div class="secao1-2" id="orientador">
             <h1>

@@ -484,6 +484,10 @@ body {
     font-family: 'Montserrat', 'Lucida Sans', sans-serif;
 }
 
+.espacamento-header {
+    height: 7vh;
+}
+
 .header-site {
     background-color: #FFFFFF;
     height: 10vh; 
